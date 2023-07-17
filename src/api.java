@@ -24,7 +24,10 @@ public class api {
     
             System.out.println("Tasa de cambio: " + tasaCambio);
         } catch (IOException e) {
-            e.printStackTrace();
+	            JOptionPane.showMessageDialog(null,"Sin conexion Vuelva a iniciar el programa cuando se restablesca la conexion a inernet");
+	            JOptionPane.showMessageDialog(null,"Programa finalizado");
+	            e.printStackTrace();   
+	            System.exit(0);
         }
         
 		 return resultado;
